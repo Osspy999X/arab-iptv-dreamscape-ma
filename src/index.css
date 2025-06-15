@@ -1,0 +1,379 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* IPTV Custom Colors */
+    --iptv-primary: 240 100% 50%;
+    --iptv-secondary: 280 100% 60%;
+    --iptv-accent: 45 100% 50%;
+    --iptv-dark: 240 20% 10%;
+    --iptv-light: 240 50% 95%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-foreground min-h-screen;
+  }
+}
+
+/* تدرجات احترافية للـ IPTV */
+.iptv-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.iptv-gradient-dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 8px 32px rgba(26, 26, 46, 0.5);
+}
+
+.iptv-gradient-blue {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  box-shadow: 0 8px 32px rgba(79, 70, 229, 0.4);
+}
+
+.iptv-gradient-purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.4);
+}
+
+.iptv-gradient-purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.4);
+}
+
+.iptv-gradient-green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.4);
+}
+
+.iptv-gradient-red {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.4);
+}
+
+.iptv-gradient-orange {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.4);
+}
+
+/* خلفية احترافية متدرجة */
+.professional-bg {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* تأثيرات الزجاج المصقول */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.iptv-card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.iptv-card-hover:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* تأثيرات احترافية للبطاقات */
+.professional-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.professional-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* تأثيرات النيون */
+.neon-glow {
+  box-shadow:
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
+  animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    box-shadow:
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor,
+      0 0 20px currentColor;
+  }
+  to {
+    box-shadow:
+      0 0 2px currentColor,
+      0 0 5px currentColor,
+      0 0 8px currentColor,
+      0 0 12px currentColor;
+  }
+}
+
+/* تأثيرات الحركة المتقدمة */
+.smooth-bounce {
+  animation: smoothBounce 2s ease-in-out infinite;
+}
+
+@keyframes smoothBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* تدرج متحرك للخلفية */
+.animated-gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* تأثيرات المشغل المرئي */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes videoGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(147, 51, 234, 0.7);
+  }
+}
+
+.video-glow {
+  animation: videoGlow 3s ease-in-out infinite;
+}
+
+/* تحسينات الشاشة الكاملة */
+.fullscreen-container {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.fullscreen-container .aspect-video {
+  aspect-ratio: unset !important;
+  height: 100% !important;
+}
+
+/* تحسينات الأداء للفيديو */
+video {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* تحسين التحميل */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* تأثيرات التنقل */
+@keyframes tvFocus {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+  }
+}
+
+/* أنماط الانترو */
+.animated-gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.6), 0 0 40px rgba(102, 126, 234, 0.4), 0 0 60px rgba(102, 126, 234, 0.2);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+

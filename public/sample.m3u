@@ -1,0 +1,17 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="bein1" tvg-logo="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300&h=200&fit=crop" group-title="رياضة",BeIN Sports 1 HD
+https://example.com/bein1.m3u8
+#EXTINF:-1 tvg-id="aljazeera" tvg-logo="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop" group-title="أخبار",الجزيرة الإخبارية
+https://example.com/aljazeera.m3u8
+#EXTINF:-1 tvg-id="mbc1" tvg-logo="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=300&h=200&fit=crop" group-title="ترفيه",MBC 1
+https://example.com/mbc1.m3u8
+#EXTINF:-1 tvg-id="rotana" tvg-logo="https://images.unsplash.com/photo-1489599856641-b2d54d0b0b78?w=300&h=200&fit=crop" group-title="أفلام",روتانا سينما
+https://example.com/rotana.m3u8
+#EXTINF:-1 tvg-id="spacetoon" tvg-logo="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop" group-title="أطفال",سبيستون
+https://example.com/spacetoon.m3u8
+#EXTINF:-1 tvg-id="dubai" tvg-logo="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300&h=200&fit=crop" group-title="رياضة",دبي الرياضية
+https://example.com/dubai.m3u8
+#EXTINF:-1 tvg-id="alarabiya" tvg-logo="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop" group-title="أخبار",العربية
+https://example.com/alarabiya.m3u8
+#EXTINF:-1 tvg-id="cartoon" tvg-logo="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop" group-title="أطفال",كرتون نتورك بالعربية
+https://example.com/cartoon.m3u8
